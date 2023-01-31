@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-padding-top: 1rem;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: black;
+  --text-color: Blue;
+  --bg-color: white;
+}
+
+
+.container {
+  max-width: 1068px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+    display: block;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: green;
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 35px;
+  }
+
+  #menu {
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--text-color);
+    display: none;
+  }
+  
+  .logo {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-color);
+  }
+  
+  .logo span {
+    color: var(--main-color);
+  }
+  
+  .navbar {
+    display: flex;
+    column-gap: 2rem;
+  }
+  
+  .navbar a {
+    color: var(--main-color);
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  
+  .navbar a:hover,
+  .navbar.active {
+    color: var(--text-color);
+    border-bottom: 3px solid var(--main-color);
+  }
+  
+  
+  #icon-recheche {
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--bg-color);
+    
+  }
+  
+  .search-box {
+    position: absolute;
+    top: 110%;
+    right: 0;
+    left: 0;
+    background: var(--bg-color);
+    box-shadow: 4px 4px 20px rgb(15 54 55 /100%);
+    border: 1px solid var(--main-color);
+    border-radius: 0.5rem;
+    clip-path: circle(0% at 100% 0%);
+  }
+  
+  .search-box.active {
+    clip-path: circle(144% at 100% 0%);
+    transition: 0.4s;
+  } /* cette "active est en relation avec celle de l'évenement js
+  Elle est différent de classe active dans notre HTML*/
+  
+  .search-box input {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1rem;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
